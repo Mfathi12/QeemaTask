@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+/*
+  Design system: light only. Sans stack uses Inter (Geist-compatible substitute via CDN).
+  Add local Geist later by swapping --font-sans.
+*/
+:root {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --bg: #f8fafb;
+  --surface: #ffffff;
+  --surface-2: #f1f5f3;
+  --border: #e4e9e7;
+
+  --text: #111827;
+  --text-muted: #6b7280;
+  --text-hint: #9ca3af;
+
+  --accent: #059669;
+  --accent-hover: #047857;
+  --accent-light: #d1fae5;
+  --accent-bg: #ecfdf5;
+  --accent-text: #065f46;
+
+  --danger: #dc2626;
+  --danger-border: #fca5a5;
+  --danger-bg: #fee2e2;
+
+  --live: #059669;
+  --live-off: #dc2626;
+
+  --toastify-color-success: #059669;
+  --toastify-color-error: #dc2626;
+  --toastify-color-warning: #d97706;
+  --toastify-color-info: #2563eb;
+  --toastify-font-family: var(--font-sans);
+
+  color-scheme: only light;
+
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+/* IDs, timestamps, prices */
+.font-data {
+  font-family: var(--font-mono);
+}
+
+.Toastify__toast {
+  font-family: var(--font-sans);
+}
